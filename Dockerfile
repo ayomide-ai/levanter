@@ -3,4 +3,4 @@ RUN git clone https://github.com/lyfe00011/levanter.git /root/LyFE/
 WORKDIR /root/LyFE/
 RUN yarn install
 COPY render-entry.js /root/render-entry.js
-CMD ["node", "/root/render-entry.js"]
+ENTRYPOINT ["node", "/root/render-entry.js"]
